@@ -32,6 +32,15 @@ function clickBackmodal() {
     });
 }
 
+//scroll to anchor event
+function sclToAnchor(anchorArea) {
+    var anchorTop = $('#' + anchorArea).offset().top;
+
+    $("html, body").animate({
+        scrollTop: anchorTop - 100
+    }, 300);
+}
+
 //show & hide modal history event
 function showHistory() {
     var historyCont = $(".modal-history-cont");
