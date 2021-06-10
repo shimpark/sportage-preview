@@ -1,6 +1,406 @@
 @charset "utf-8";
 
 /*============================================================
+footer
+============================================================*/
+footer {
+    padding: 2rem 0;
+    color: #888;
+    background-color: #fafaf8;
+    border-top: 1px solid #e1e1e0;
+}
+.ft-wrap__lt {
+    position: relative;
+    padding-left: 9rem;
+}
+.ft-logo {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 6.5rem;
+}
+.ft-btn {
+    display: inline-block;
+    padding: 0.75rem 0;
+    width: 9.5rem;
+    text-align: center;
+    background-color: #ececea;
+}
+
+@media screen and (max-width: 575.98px) {
+    main + footer {
+        padding-bottom: 9rem;
+    }
+    .ft-wrap {
+        display: block;
+        text-align: center;
+    }
+    .ft-wrap__lt {
+        padding-left: 0;
+        width: 100%;
+    }
+    .ft-logo {
+        position: relative;
+        top: auto;
+        left: auto;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        width: 5.5rem;
+    }
+    .copyright {
+        padding-top: 1rem;
+    }
+    .ft-btn {
+        margin-top: 1rem;
+        padding: 1rem 0;
+        width: 11.5rem;
+    }
+}
+
+/*============================================================
+main
+============================================================*/
+main {
+    letter-spacing: -1px;
+}
+/* 플로팅 메뉴
+============================================================*/
+.main-flt-menu-list {
+    position: fixed;
+    top: 5rem;
+    right: 14%;
+    padding: 0 5px;
+    width: 5rem;
+    background-color: #13202c;
+    border-radius: 5px;
+}
+.main-flt-menu {
+    display: block;
+    padding: 1rem 0;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #fff;
+    line-height: 1.4;
+    text-align: center;  
+}
+.main-flt-menu-list li + li .main-flt-menu {
+    border-top: 1px solid #46525d;
+}
+
+@media screen and (max-width: 1919.98px) {
+    .main-flt-menu-list {
+        right: 20px;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .main-flt-menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: auto;
+        padding: 0;
+        width: 100%;
+        background-color: #13202c;
+        border-radius: 0;
+    }
+    .main-flt-menu-list li {
+        position: relative;
+        width: 25%;
+        height: 7rem;
+    }
+    .main-flt-menu-list li:first-child {
+        background-color: #05141f;
+    }
+    .main-flt-menu-list li:nth-child(2) {
+        background-color: #2a3e52;
+    }
+    .main-flt-menu-list li:nth-child(3) {
+        background-color: #f3c300;
+    }
+    .main-flt-menu-list li:last-child {
+        background-color: #6d6e71;
+    }
+    .main-flt-menu {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .main-flt-menu-list li + li .main-flt-menu {
+        border-top: 0;
+    }
+    .main-flt-menu-list li:nth-child(3) .main-flt-menu {
+        color: #05141f !important;
+    }
+}
+/* 비쥬얼
+============================================================*/
+.main-vsl-area {
+    height: 56.25rem;
+    background: url("../images/main-visual-bg.jpg") no-repeat center top;
+    background-size: cover;
+}
+.main-vsl-cont {
+    padding-top: 4rem;
+}
+.main-vsl-label {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid #152330;
+}
+.main-vsl-tit {
+    margin-top: 1.5rem;
+    width: 34.75rem;
+}
+.main-vsl-txt {
+    padding-top: 4rem;
+    line-height: 1.4;
+}
+.main-vsl-txt em {
+    display: inline-block;
+    font-style: normal;
+    border-bottom: 4px solid #f5cb20;
+}
+
+@media screen and (max-width: 575.98px) {
+    .main-vsl-area {
+        height: 45rem;
+        background: #e4ebf3 url("../images/main-visual-bg-mo.jpg") no-repeat center top;
+        background-size: contain;
+    }
+    .main-vsl-label {
+        padding: 0.75rem 1rem;
+        border-width: 1px;
+    }
+    .main-vsl-tit {
+        width: 16rem;
+    }
+    .main-vsl-txt em {
+        border-width: 2px;
+    }
+}
+/* content common style
+============================================================*/
+.main-cont-area {
+    padding: 6rem 0;
+}
+.main-cont-tit {
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 575.98px) {
+    .main-cont-area {
+        padding: 5rem 0;
+    }
+    .main-cont-tit {
+        line-height: 1.4;
+        text-align: center;
+    }
+}
+/* 미션 리스트
+============================================================*/
+.main-msn-area {
+    padding-top: 0;
+    background: url("../images/main-mission-bg.jpg") no-repeat center top;
+    background-size: cover;
+}
+.main-msn-list li + li {
+    padding-top: 1rem;
+}
+.main-msn-item {
+    position: relative;
+    padding: 1rem 1.5rem;
+    width: 96%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/main-mission-bg-soon.png");
+    border-radius: 5px;
+}
+.main-msn-label {
+    display: inline-block;
+    padding: 0.35rem 0;
+    width: 4.5rem;
+    line-height: 1.4;
+    color: #fff;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.main-msn-cont {
+    position: relative;
+    width: calc(100% - 4.5rem);
+}
+.main-msn-tit {
+    display: block;
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #dadadb;
+}
+.main-msn-tit .kakaomap-ico {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 6.5rem;
+    vertical-align: middle;
+}
+.main-msn-state {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #f3c300;
+}
+.main-msn-item.active {
+    background-image: url("../images/main-mission-list-bg-ing.png");
+}
+.active .main-msn-label,
+.active .main-msn-tit,
+.active .main-msn-state {
+    color: #05141f;
+}
+.active .main-msn-state {
+    padding-right: 1rem;
+    background: url("../images/main-mission-arw-ing.png") no-repeat center right;
+    background-size: 0.75rem;
+}
+.main-msn-item.open {
+    width: 100%;
+    background-image: url("../images/main-mission-list-bg-open.png");
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.main-msn-open-ico {
+    display: inline-block;
+    position: absolute;
+    top: -0.75rem;
+    left: 4.5rem;
+    width: 3rem;
+}
+.open .main-msn-tit {
+    font-size: 1.5rem;
+    color: #f3c300;
+}
+.open .main-msn-state {
+    padding-right: 1rem;
+    color: #fff;
+    background: url("../images/main-mission-arw-open.png") no-repeat center right;
+    background-size: 0.75rem;
+}
+
+@media screen and (max-width: 575.98px) {
+    .main-msn-item {
+        align-items: initial;
+        padding: 1.5rem 1rem;
+        width: 100%;
+    }
+    .main-msn-tit {
+        min-height: 3.5rem;
+        font-size: 1.3rem;
+    }
+    .main-msn-tit .kakaomap-ico {
+        margin-right: 0.5rem;
+        width: 6rem;
+    }
+    .main-msn-state {
+        position: relative;
+        top: auto;
+        right: auto;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+    }
+    .open .main-msn-tit {
+        font-size: 1.3rem;
+    }
+}
+/* 리워드
+============================================================*/
+.main-reward-area {
+    background: url("../images/main-reward-bg.jpg") no-repeat center top;
+    background-size: cover;
+}
+[class^="main-reward-wrap__"] {
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.75rem;
+}
+.main-reward-wrap__top {
+    background-color: #fff;
+}
+.main-reward-wrap__btm {
+    margin-top: 0.5rem;
+    background: url("../images/main-reward-daily-bg.png") no-repeat center top;
+    background-size: cover;
+}
+[class^="main-reward-wrap__"] figure {
+    font-size: 0;
+}
+.main-reward-tit {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    line-height: 1.4;
+}
+.main-reward-tit strong {
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 0.5rem;
+    border-bottom: 3px solid #5d7d2b;
+}
+.main-reward-wrap__top .main-reward-cont {
+    padding: 3rem 0 2rem;
+    text-align: center;
+    background-color: #faf9f9;
+}
+
+@media screen and (max-width: 575.98px) {
+    .main-reward-wrap__btm {
+        background: url("../images/main-reward-daily-bg-mo.png") no-repeat center top;
+        background-size: cover;
+    }
+    .main-reward-tit {
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+    .main-reward-tit strong {
+        margin-top: 0;
+        border-width: 2px;
+    }
+    .main-reward-wrap__top .main-reward-cont {
+        padding: 2.5rem 0;
+        line-height: 1.4;
+    }
+}
+/* 유의사항 & 문의처
+============================================================*/
+.main-etc-wrap + .main-etc-wrap {
+    padding-top: 6rem;
+}
+.main-caution-txt {
+    line-height: 1.4;
+    background: url("../images/main-caution-text-mark.png") no-repeat center left;
+    background-size: 0.75rem;
+}
+.main-caution-txt + .main-caution-txt {
+    margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 575.98px) {
+    .main-caution-txt {
+        background-position: left top 0.5rem;
+    }
+}
+
+/*============================================================
 modal
 ============================================================*/
 /* 쿠폰 번호 입력 모달

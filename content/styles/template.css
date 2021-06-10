@@ -774,8 +774,8 @@ font style
 ============================================================*/
 /* font family
 ============================================================*/
-.fw100 {
-    font-weight: 100 !important;
+.fw300 {
+    font-weight: 300 !important;
 }
 .fw400 {
     font-weight: 400 !important;
@@ -919,6 +919,22 @@ font style
     left: 0;
     font-style: initial;
 }
+
+.fs22.txt-indent {
+    padding-left: 1.25rem;
+}
+.fs18.txt-indent {
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 575.98px) {
+    .fs22.txt-indent {
+        padding-left: 1.75rem;
+    }
+    .form-tip.fs18.txt-indent {
+        padding-left: 1.5rem;
+    }
+}
 /* hidden text
 ============================================================*/
 .txt-hidden {
@@ -954,6 +970,12 @@ color palatte
 }
 .fc-red {
     color: #e8002a !important;
+}
+.fc-yellow {
+    color: #f3c300 !important;
+}
+.fc-green {
+    color: #5d7d2b !important;
 }
 .fc-indigo {
     color: #3c576b !important;
@@ -1332,9 +1354,6 @@ form
 .form-tip {
     line-height: 1.4;
 }
-.form-tip.fs18.txt-indent {
-    padding-left: 1rem;
-}
 
 @media (max-width: 575.98px) {
     .form-input-txt {
@@ -1359,9 +1378,6 @@ form
         height: 5rem;
         font-size: 1.4rem;
     }
-    .form-tip.fs18.txt-indent {
-        padding-left: 1.5rem;
-    }
 }
 
 /*============================================================
@@ -1377,7 +1393,9 @@ policy
     display: block;
     padding: 2rem 0 0.5rem;
     font-weight: 400;
-    font-size: 1.1rem;
+}
+.policy-txt {
+    font-weight: 300;
 }
 .policy-tbl {
     margin: 2rem 0;
@@ -1386,10 +1404,9 @@ policy
 .policy-tbl th,
 .policy-tbl td {
     padding: 0.75rem 1rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 .policy-tbl thead th {
-    font-weight: 400;
     background-color: #d9d9d9;
 }
 .policy-tbl tbody td {
