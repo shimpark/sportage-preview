@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+/*============================================================
+modal
+============================================================*/
+/* 쿠폰 번호 입력 모달
+============================================================*/
+.modal-coupon-msn-label {
+    display: inline-block;
+    padding: 0.75rem 0;
+    margin-bottom: 0.5rem;
+    width: 8rem;
+    color: #fff;
+    background-color: #9ea1a2;
+    border-radius: 2rem;
+}
+.form-input-coupon {
+    text-align: center;
+}
+.form-input-coupon:read-only {
+    color: #fff;
+    background-color: #667c90;
+}
+
+@media (max-width: 575.98px) {
+    .modal-coupon-msn-label {
+        margin-bottom: 0.75rem;
+        width: 10rem;
+    }
+}
+/* 즉석 당첨 경품 결과
+============================================================*/
+[class^="modal-prize-hd__"] {
+    text-align: center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.modal-prize-hd__win {
+    padding: 3rem 2.5rem 0;
+    background-image: url("../images/modal-prize-hd-win-bg.png");
+}
+.modal-prize-hd__fail {
+    padding: 3rem 2.5rem 6rem;
+    background-image: url("../images/modal-prize-hd-fail-bg.png");
+}
+[class^="modal-prize-hd__"] .modal-hd-greet {
+    padding-bottom: 2.5rem;
+}
+[class^="modal-prize-hd__"] .modal-hd-greet::after {
+    display: none;
+}
+[class^="modal-prize-hd__"] .modal-hd-tit {
+    font-size: 3.5rem;
+}
+.modal-prize-label {
+    display: inline-block;
+    padding: 0.75rem 0;
+    margin-bottom: 1rem;
+    width: 12rem;
+    background-color: #f3c300;
+    border-radius: 2rem;
+}
+.modal-prize-gift {
+    display: inline-block;
+    margin-top: 1rem;
+    max-width: 10rem;
+}
+.modal-prize-txt {
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    line-height: 1.2;
+    border-bottom: 1px solid #919ba5;
+}
+
+@media screen and (max-width: 991.98px) {
+    .modal-prize-hd__win {
+        background-position: center top -5rem;
+    }
+    .modal-prize-hd__fail {
+        background-position: center top -10rem;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    .modal-prize-hd__win {
+        background-position: center top;
+        background-size: 130%;
+    }
+    .modal-prize-hd__fail {
+        padding-bottom: 3rem;
+        background-position: center top;
+        background-size: 130%
+    }
+    .modal-prize-label {
+        width: 15rem;
+    }
+    .modal-prize-gift {
+        margin-top: 1.5rem;
+    }
+}
+/* 내 쿠폰 응모 내역
+============================================================*/
+.modal-history-tab-list {
+    padding: 0 1.5rem 1rem;
+}
+.modal-history-tab-list li {
+    width: 32.5%;
+}
+.modal-history-tab {
+    display: block;
+    position: relative;
+    padding: 1.5rem 0;
+    margin: 5px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #667c90;
+    border-radius: 0.75rem;
+}
+.modal-history-tab-badge {
+    position: absolute;
+    top: -1rem;
+    left: -0.5rem;
+    width: 4.5rem;
+}
+.active .modal-history-tab {
+    color: #05141f;
+    background-color: #f3c300;
+}
+.modal-history-cont {
+    display: none;
+}
+.modal-history-prize-wrap {
+    padding: 1rem 1.5rem 4rem;
+}
+.modal-history-prize-box {
+    position: relative;
+    height: 8.5rem;
+    line-height: 1.4;
+    background-color: #f0f0f0;
+    border-top: 4px solid #f3c300;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
+.modal-history-prize-box > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+[class^="modal-history-prize__"] {
+    padding: 0.75rem 0 0.75rem 4.5rem;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 3.5rem;
+}
+.modal-history-prize__coffee {
+    background-image: url("../images/modal-prize-coffee.png");
+}
+.modal-history-prize__pocari {
+    background-image: url("../images/modal-prize-pocari.png");
+}
+.modal-history-center-wrap {
+    padding: 0 1.5rem 4rem;
+}
+.modal-history-center-list {
+    margin-top: 2rem;
+    border-top: 2px solid #667c90;
+}
+.modal-history-center-list li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #d1d7dd;
+}
+.modal-history-center-list .delete-btn {
+    display: inline-block;
+    padding: 0.5rem 0;
+    width: 4rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+}
+[class^="modal-history-reward-wrap__"] {
+    padding: 4rem 0 5rem;
+    text-align: center;
+    background-color: #e0e5e9;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.modal-history-reward-wrap__win {
+    background: #e0e5e9 url("../images/modal-history-reward-win-bg.png") no-repeat center top;
+}
+.modal-history-reward-label {
+    display: inline-block;
+    padding: 0.5rem 0;
+    width: 13rem;
+    color: #fff;
+    background-color: #667c90;
+    border-radius: 2rem;
+}
+.modal-history-reward-tit {
+    padding: 2rem 0 1.5rem;
+    font-size: 2.8rem;
+}
+.modal-history-reward {
+    display: inline-block;
+    width: 19rem;
+}
+.modal-history-reward-wrap__fail h4 {
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 575.98px) {
+    .modal-history-tab {
+        padding: 1.75rem 0;
+    }
+    .modal-history-prize-box > p {
+        width: 80%;
+    }
+    .modal-history-center-list li {
+        padding: 1.75rem 0;
+    }
+    .modal-history-reward-label {
+        padding: 0.75rem 0;
+        width: 15rem;
+    }
+    .modal-history-reward {
+        width: 22rem;
+    }
+}
+/* 스폐셜 리워드 당첨자 발표
+============================================================*/
+#modalRewardWin .modal-hd {
+    padding-bottom: 4.5rem;
+    background: #fff url("../images/modal-rewardwin-hd-bg.png") no-repeat center top;
+    background-size: 100%;
+}
+#modalRewardWin .modal-cont {
+    padding-top: 0;
+    background: #fff url("../images/modal-rewardwin-cont-bg.png") no-repeat center top;
+    background-size: 100%;
+}
+
+@media screen and (max-width: 991.98px) {
+    #modalRewardWin .modal-hd {
+        background-position: center top -3rem;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    #modalRewardWin .modal-hd {
+        background-position: center top;
+        background-size: 130%;
+    }
+}
