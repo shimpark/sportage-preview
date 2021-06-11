@@ -36,21 +36,162 @@
     <body>
         <!-- main START -->
         <main>
-            <!-- 메인 페이지 퍼블 작업 시 삭제 예정 -->
-            <a href="javascript:void(0);" onclick="openModal('modalLogin');" class="pt40 pb20 fs20 txt-cnt" style="display: block;">로그인 레이어 팝업 [카카오계정으로 로그인] > 개인정보 입력 레이어 팝업 [등록] > 미션1 쿠폰번호 입력 레이어 팝업</a>
-            <a href="javascript:void(0);" onclick="openModal('modalCouponMsn2');" class="pt20 pb20 fs20 txt-cnt fs20" style="display: block;">미션2 쿠폰번호 입력 레이어 팝업 [이벤트 응모] > 즉석 당첨 경품 결과 레이어 팝업</a>
-            <a href="javascript:void(0);" onclick="openModal('modalCouponMsn3');" class="pt20 pb20 fs20 txt-cnt fs20" style="display: block;">미션3 쿠폰번호 입력 레이어 팝업 [이벤트 응모] > 즉석 당첨 경품 결과 레이어 팝업</a>
-            <a href="javascript:void(0);" onclick="openModal('modalCouponMsn4');" class="pt20 pb20 fs20 txt-cnt fs20" style="display: block;">미션4 쿠폰번호 입력 레이어 팝업 [이벤트 응모] > 즉석 당첨 경품 결과 레이어 팝업</a>
-            <a href="javascript:void(0);" onclick="openModal('modalCouponMsn5');" class="pt20 pb20 fs20 txt-cnt fs20" style="display: block;">미션5 쿠폰번호 입력 레이어 팝업 [이벤트 응모] > 즉석 당첨 경품 결과 레이어 팝업</a>
-            <a href="javascript:void(0);" onclick="openModal('modalCouponMsn6');" class="pt20 pb20 fs20 txt-cnt fs20" style="display: block;">미션6 쿠폰번호 입력 레이어 팝업 [이벤트 응모] > 즉석 당첨 경품 결과 레이어 팝업</a>
-            <a href="javascript:void(0);" onclick="openModal('modalHistory');" class="pt20 pb20 fs20 txt-cnt fs20" style="display: block;">내 쿠폰 응모 내역 레이어 팝업 > 각 미션 탭 클릭 시 팝업 내용 변경</a>
-            <a href="javascript:void(0);" onclick="openModal('modalRewardWin');" class="pt20 pb20 fs20 txt-cnt fs20" style="display: block;">스페셜 리워드 당첨자 발표 레이어 팝업</a>
-            <!-- //메인 페이지 퍼블 작업 시 삭제 예정 -->
+            <div class="main-vsl-area">
+                <div class="grid1170">
+                    <div class="main-vsl-cont">
+                        <span class="main-vsl-label fw700 fs28 fs20__mo">기아 스포티지 카카오톡 채널 오픈</span>
+                        <h1 class="main-vsl-tit">
+                            <img src="../../content/images/main-visual-title.png" alt="스포티지 PREVIEW" class="pc-show">
+                            <img src="../../content/images/main-visual-title-mo.png" alt="스포티지 PREVIEW" class="mo-show">
+                        </h1>
+                        <p class="main-vsl-txt fs28 fs22__mo">신형 스포티지 소식을 가장 먼저 받아보는<br><strong class="fs30 fs24__mo">스포티지 <em>카카오톡 채널의 멤버</em>가 되어주세요!</strong></p>
+                    </div>
+                </div>
+            </div> <!-- //main visual area -->
+            <article class="main-cont-area main-msn-area" id="mainMsnArea">
+                <div class="grid1170">
+                    <h3 class="main-cont-tit fw400 fs36 fs28__mo"><span class="txt-linebreak__mo">미션을 완료하고 받은</span> <strong>쿠폰 번호를 입력</strong>해 주세요.</h3>
+                    <ul class="main-msn-list">
+                        <li>
+                            <a href="javascript:void(0);" class="main-msn-item active flex-box flex-align__cnt" onclick="openModal('modalLogin');">
+                                <span class="main-msn-label fw700 fs18">Mission<br><b class="fs22">01</b></span>
+                                <div class="main-msn-cont">
+                                    <strong class="main-msn-tit">기아 스포티지 채널 추가 & 스포티지 히스토리 퀴즈 참여</strong>
+                                    <span class="main-msn-state fw700 fs20 fs18__mo">이벤트 참여하기</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="main-msn-item open flex-box flex-align__cnt" onclick="openModal('modalCouponMsn2');">
+                                <i class="main-msn-open-ico"><img src="../../content/images/main-mission-open-ico.png" alt="OPEN"></i>
+                                <span class="main-msn-label fw700 fs18">Mission<br><b class="fs22">02</b></span>
+                                <div class="main-msn-cont">
+                                    <strong class="main-msn-tit">디자인 필름 감상 및 공유</strong>
+                                    <span class="main-msn-state fw700 fs20 fs18__mo">이벤트 참여하기</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="main-msn-item flex-box flex-align__cnt" onclick="openModal('modalCouponMsn3');">
+                                <span class="main-msn-label fw700 fs18">Mission<br><b class="fs22">03</b></span>
+                                <div class="main-msn-cont">
+                                    <strong class="main-msn-tit">기아 대표 SUV 3종 알아보기</strong>
+                                    <span class="main-msn-state fw700 fs20 fs18__mo">COMING SOON</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="main-msn-item flex-box flex-align__cnt" onclick="openModal('modalCouponMsn4');">
+                                <span class="main-msn-label fw700 fs18">Mission<br><b class="fs22">04</b></span>
+                                <div class="main-msn-cont">
+                                    <strong class="main-msn-tit"><i class="kakaomap-ico"><img src="../../content/images/main-mission-kakaomap-logo.png" alt="kakaomap 로고 이미지"></i>카카오맵에서 고객 희망 거점 전시차 입고 알림 신청</strong>
+                                    <span class="main-msn-state fw700 fs20 fs18__mo">COMING SOON</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="main-msn-item flex-box flex-align__cnt" onclick="openModal('modalCouponMsn5');">
+                                <span class="main-msn-label fw700 fs18">Mission<br><b class="fs22">05</b></span>
+                                <div class="main-msn-cont">
+                                    <strong class="main-msn-tit">프리런칭 광고 보러 가기</strong>
+                                    <span class="main-msn-state fw700 fs20 fs18__mo">COMING SOON</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="main-msn-item flex-box flex-align__cnt" onclick="openModal('modalCouponMsn6');">
+                                <span class="main-msn-label fw700 fs18">Mission<br><b class="fs22">06</b></span>
+                                <div class="main-msn-cont">
+                                    <strong class="main-msn-tit"><i class="kakaomap-ico"><img src="../../content/images/main-mission-kakaomap-logo.png" alt="kakaomap 로고 이미지"></i>카카오맵 에서 구매 상담하러 가까운 전시장 길 찾기</strong>
+                                    <span class="main-msn-state fw700 fs20 fs18__mo">COMING SOON</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article> <!-- //미션 리스트 -->
+            <article class="main-cont-area main-reward-area">
+                <div class="grid1170">
+                    <h3 class="main-cont-tit fw400 fs36 fs28__mo fc-white txt-cnt"><span class="txt-linebreak__mo">미션을 완료 할 때 마다</span> 추첨을 통해 다양한 경품을 드립니다</h3>
+                    <div class="main-reward-wrap__top">
+                        <h4 class="main-reward-tit fw400 fs24 fs20__mo">추첨을 통해<br>제공되는<br><strong class="fs30 fs24__mo fc-green">스페셜 리워드</strong></h4>
+                        <figure>
+                            <img src="../../content/images/main-reward-special.png" alt="스포티지 5세대(1명), 삼성 오디세이 G7 커브드 모니터(3명), Apple Airpods Pro 3세대 + 무광 케이스(10명), 캠핑용 감성 LED 램프(30명), 스포티지 계약금 지원 쿠폰 10만 원(500명)" class="pc-show">
+                            <img src="../../content/images/main-reward-special-mo.png" alt="스포티지 5세대(1명), 삼성 오디세이 G7 커브드 모니터(3명), Apple Airpods Pro 3세대 + 무광 케이스(10명), 캠핑용 감성 LED 램프(30명), 스포티지 계약금 지원 쿠폰 10만 원(500명)" class="mo-show">
+                        </figure>
+                        <div class="main-reward-cont">
+                            <p class="fw700 fs26 fs24__mo fc-indigo"><span class="txt-linebreak__mo">경품에 숨겨진 The all-new Sportage의</span> 주요 특징을 찾아보세요!</p>
+                            <p class="pt20 fw300 fs18 fc-brown"><span class="txt-linebreak__mo">* 스페셜 리워드는 8월 3일(화) 이벤트 종료 후,</span> 8월 중 추첨 및 일괄 배송 예정입니다.</p>
+                        </div>
+                    </div>
+                    <div class="main-reward-wrap__btm">
+                        <h4 class="main-reward-tit fw400 fs24 fs20__mo">당첨을<br>바로 확인할 수 있는<br><strong class="fs30 fs24__mo fc-green">데일리 리워드</strong></h4>
+                        <figure>
+                            <img src="../../content/images/main-reward-daily.png" alt="포카리스웨트 250ml(1500명), 스타벅스 아메리카노 HOT TALL사이즈(1000명)" class="pc-show">
+                            <img src="../../content/images/main-reward-daily-mo.png" alt="포카리스웨트 250ml(1500명), 스타벅스 아메리카노 HOT TALL사이즈(1000명)" class="mo-show">
+                        </figure>
+                    </div>
+                </div>
+            </article> <!-- //리워드 소개 -->
+            <article class="main-cont-area">
+                <div class="grid1170">
+                    <dl class="main-etc-wrap">
+                        <dt class="main-cont-tit fw700 fs32">유의사항</dt>
+                        <dd>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">쿠폰함에서 입력된 모든 쿠폰 내용을 확인할 수 있습니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">모든 경품은 당첨 후 2주 내에 당첨 확인 및 회신을 하지 않을 경우 당첨이 취소됩니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">당첨된 경품(5만 원 초과)의 제세공과금(약 22%)은 본인 부담입니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">비정상적이고 불법적인 방법으로 본 이벤트에 참여하신 경우 당첨이 취소됩니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">개인정보 누락 및 오 기입, 휴대폰 해지/정지/번호 변경으로 인한 당첨 취소에 대한 책임은 당첨자에 있습니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">배송지 입력 기한 내에 배송지를 입력하지 않은 경우 자동으로 당첨이 취소됩니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">배송지 오 기입으로 인해 경품을 수령받지 못한 경우 재발송이 불가합니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">당첨자가 당첨 포기를 원하는 경우, 당첨 및 경품에 대한 권리는 자동 소멸됩니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">개인정보 수집 및 이용 동의는 개인정보보호법 규정에 의거하여 적용됩니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">개인정보는 경품 발송 후 1개월 내에 폐기됩니다.</p>
+                            <p class="main-caution-txt fs22 fs20__mo txt-indent">본 이벤트는 당사 사정에 의해 이벤트 내용이 변경되거나 조기 종료될 수 있습니다.</p>
+                        </dd>
+                    </dl>
+                    <dl class="main-etc-wrap">
+                        <dt class="main-cont-tit fw700 fs32">문의처</dt>
+                        <dd>
+                            <p class="fs30 fs26__mo fc-green">운영 사무국 (kia.nq5event@gmail.com)</p>
+                        </dd>
+                    </dl>
+                </div>
+            </article> <!-- //유의사항, 문의처 -->
         </main>
         <!-- //main END -->
         <!-- footer START -->
-        <footer></footer>
+        <footer>
+            <div class="grid1170">
+                <div class="ft-wrap flex-box flex-spc__btw flex-align__cnt">
+                    <div class="ft-wrap__lt">
+                        <span class="ft-logo"><img src="../../content/images/footer-logo.png" alt="기아 로고"></span>
+                        <p class="copyright fs18">COPYRIGHT© Kia CORP. ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <div class="ft-wrap__rt">
+                        <a href="privacy.html" class="ft-btn fs18">개인정보처리방침</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- //footer END -->
+        <!-- floating menu START -->
+        <ul class="main-flt-menu-list">
+            <li>
+                <a href="http://pf.kakao.com/_xdciTs" target="_blank" title="스포티지 카카오톡 채널 바로 가기 (새 창 이동)" class="main-flt-menu">스포티지<br>카카오톡 채널<br>바로 가기</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" target="_blank" title="카카오맵 바로 가기 (새 창 이동)" class="main-flt-menu">카카오맵<br>바로 가기</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="main-flt-menu fc-yellow" onclick="sclToAnchor('mainMsnArea');">응모 하기</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="main-flt-menu" onclick="openModal('modalHistory');">응모 내역</a>
+            </li>
+        </ul>
+        <!-- //floating menu START -->
         <!-- modal START -->
         <div class="modal-area" id="modalLogin">
             <div class="modal-wrap__abs">
@@ -93,7 +234,7 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <button class="form-btn w-pct__100">인증번호 받기</button>
+                                <button class="form-btn fw700 w-pct__100">인증번호 받기</button>
                             </div>
                             <div class="form-row">
                                 <div class="form-el-wrap__col flex-box">
@@ -110,8 +251,8 @@
                                     <input type="checkbox" id="myTermCheck1">
                                     <label class="form-chk-label" for="myTermCheck1">개인정보 수집 및 이용에 동의합니다. (필수)</label>
                                 </div>
-                                <div class="form-term-box mt20">
-                                    <p>개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도<br>전달 개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도 전달<br>개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도<br>전달 개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도 전달<br>개인정보 수집 및 이용 동의 내용 별도 전달 개인정보 수집 및 이용 동의 내용 별도 전달<br>개인정보 수집 및 이용 동의 내용 별도 전달<br> 개인정보 수집 및 이용 동의 내용 별도 전달</p>
+                                <div class="form-term-box fw300 mt20">
+                                    <p>기아자동차는 서비스 이용 시 이용자로부터 아래와 같은 개인 정보를 수집하고 있습니다. 이용자는 본 개인정보 수집·이용 동의서에 따른 동의 시, '필요한 최소한의 정보 외에 개인정보' 수집·이용에 동의하지 아니할 권리가 있습니다. 개인정보 취급 및 처리에 대한 상세한 사항은 사이트 하단에 공개한 '개인정보 처리방침'을 참조하십시오. 다만, 본 동의서 내용과 상충되는 부분은 본 동의서의 내용이 우선합니다.<br><br>1) 수집하는 개인정보의 이용목적<br>이벤트 당첨자 경품 발송, 전시장 차량 입고 시 알림 MMS(선택)<br><br>2) 수집 항목<br>필수 : 이름 / 휴대전화 번호 / 카카오톡 닉네임<br><br>3) 보유 및 이용기간<br>위 개인정보는 수집이용목적(이벤트 당첨자 확인)이 달성되면 즉시 폐기합니다.<br><br>※ 귀하께서는 개인정보 처리에 대한 동의를 거부하실 수 있으며, 동의를 거부하시더라도 홈페이지의 일부 기능은 이용이 가능합니다. 다만 동의를 거부하실 경우 이벤트 당첨 경품 발송이 제한될 수 있습니다.</p>
                                 </div>
                             </div>
                             <div class="form-row pt50">
@@ -119,8 +260,8 @@
                                     <input type="checkbox" id="myTermCheck2">
                                     <label class="form-chk-label" for="myTermCheck2">개인정보 위탁에 동의합니다. (필수)</label>
                                 </div>
-                                <div class="form-term-box mt20">
-                                    <p>개인정보 위탁 내용 별도 전달 개인정보 위탁 내용 별도 전달 개인정보 위탁 내용 별도 전달 개인정보 위탁 내용 별도 전달 개인정보 위탁 내용 별도 전달</p>
+                                <div class="form-term-box fw300 mt20">
+                                    <p>기아자동차는 서비스 이행을 위해 아래와 같이 개인정보 처리 업무(행사/이벤트 안내 및 운영 포함)를 외부 전문업체에 위탁하여 처리하고 있습니다. 개인정보 처리위탁은 개별 서비스별로 그 이행을 위해 필요한 경우에 한해 각 위탁업체에 대해 이루어집니다. 업체가 변경될 경우, 웹사이트 공지사항(또는 서면·이메일·전화·SMS 등의 방법으로 개별공지)을 통하여 알려 드리겠습니다.<br><br>(주)오십일퍼센트 : 이벤트 운영 및 응모자 개인정보 수집 및 관리, 당첨자 확인<br>(주)대학내일 : 이벤트 참여를 위한 응모 플랫폼 설계 및 구축<br>(주)티사이언티픽 : 모바일 기프티콘 발송<br><br>본 이벤트 참여 고객은 개인정보 취급 위탁에 대하여 동의를 거부할 권리가 있으며, 개인정보 취급 위탁 동의에 미동의 시 본 이벤트에 참여하실 수 없습니다.</p>
                                 </div>
                             </div>
                             <div class="form-row pt50">
@@ -128,13 +269,13 @@
                                     <input type="checkbox" id="myTermCheck3">
                                     <label class="form-chk-label" for="myTermCheck3">광고성 정보 수신에 동의합니다. (선택)</label>
                                 </div>
-                                <div class="form-term-box mt20">
-                                    <p>광고성 정보 수신 내용 별도 전달 광고성 정보 수신 내용 별도 전달 광고성 정보 수신 내용 별도 전달 광고성 정보 수신 내용 별도 전달 광고성 정보 수신 내용 별도 전달 광고성 정보 수신 내용 별도 전달</p>
+                                <div class="form-term-box fw300 mt20">
+                                    <p>본인은 기아자동차가 상기와 같이 본인의 개인 정보를 수집ㆍ이용하고, 광고성 정보를 전송하는 것에 대하여 동의합니다.<br><br>1) 개인정보의 수집/이용 목적<br>: 정보 분석을 통한 마케팅 활용 및 전자적 전송매체(SMS, LMS, MMS)를 이용한 기아자동차의 이벤트, 홍보 프로모션 정보 등 광고성 정보 전송<br><br>2) 수집 항목<br>필수 : 이름 / 휴대전화 번호<br><br>3) 보유 및 이용기간<br>개인 정보 수집 일로부터 3개월 (단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 관련 법령에 따라 보관)<br><br>※ 귀하께서는 개인정보 처리에 대한 동의를 거부하실 수 있으며, 동의를 거부하시더라도 홈페이지의 일부 기능은 이용이 가능합니다. 다만 동의를 거부하실 경우 이벤트 당첨 경품 발송이 제한될 수 있습니다.</p>
                                 </div>
                             </div>
                             <div class="form-row pt50">
-                                <p class="form-tip fs18 fc-red txt-indent"><i class="mark">※</i>본인 명의의 핸드폰 번호를 입력해 주세요.</p>
-                                <p class="form-tip fs18 fc-red txt-indent"><i class="mark">※</i>개인정보 오기입으로 인한 응모 및 경품 수령 실패는 보상해드리지 않습니다.</p>
+                                <p class="form-tip fw300 fs18 fc-red txt-indent"><i class="mark">※</i>본인 명의의 핸드폰 번호를 입력해 주세요.</p>
+                                <p class="form-tip fw300 fs18 fc-red txt-indent"><i class="mark">※</i>개인정보 오기입으로 인한 응모 및 경품 수령 실패는 보상해드리지 않습니다.</p>
                             </div>
                         </div>
                     </div>
@@ -206,7 +347,7 @@
                 <div class="modal-hd">
                     <p class="modal-hd-greet fs24"><strong>김기아</strong>님 반갑습니다!</p>
                     <span class="modal-coupon-msn-label fw700 fs22">Misson 03</span>
-                    <h3 class="modal-hd-tit fw400 fs30 fs26__mo">스포티지 카카오톡 채널에서<br><b>미션추가 필요</b> 후 받은<br><b>쿠폰번호를 입력해 주세요.</b></h3>
+                    <h3 class="modal-hd-tit fw400 fs30 fs26__mo">스포티지 카카오톡 채널에서<br><b>기아 대표 SUV 3종 알아보고</b> 받은<br><b>쿠폰번호를 입력해 주세요.</b></h3>
                 </div>
                 <div class="modal-cont">
                     <div class="form-wrap">
@@ -325,13 +466,10 @@
                     <figure class="modal-prize-gift"><img src="../../content/images/modal-prize-coffee.png" alt="스타벅스 아메리카노"></figure>
                     <p class="modal-prize-txt fc-indigo"><span class="fs32"><b>스타벅스 아메리카노 HOT(TALL)</b>에</span><br>당첨되었습니다.</p>
                 </div>
-                <div class="modal-cont white">
-                    <p class="form-tip fs18 fc-indigo txt-indent"><i class="mark">※</i>경품은 당첨 확인 후 MMS로 발송(10분 내외 소요) 됩니다.</p>
-                    <p class="form-tip mt5 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
-                    <p class="form-tip mt5 fs18 fc-indigo txt-indent"><i class="mark">※</i>개인정보 오기입으로 인한 응모 및 경품 수령 실패는 보상해드리지 않습니다.</p>
-                    <div class="modal-btn-box">
-                        <button class="modal-btn__circ" onclick="closeModal('modalPrize');"><span class="label">등록</span></button>
-                    </div>
+                <div class="modal-cont pt0 white">
+                    <p class="form-tip fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품은 당첨 확인 후 MMS로 발송(10분 내외 소요) 됩니다.</p>
+                    <p class="form-tip mt5 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
+                    <p class="form-tip mt5 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>개인정보 오기입으로 인한 응모 및 경품 수령 실패는 보상해드리지 않습니다.</p>
                 </div>
             </div> <!-- //축하합니다! : 스타벅스 아메리카노 당첨 -->
             <div class="modal-wrap__rlt">
@@ -343,13 +481,10 @@
                     <figure class="modal-prize-gift"><img src="../../content/images/modal-prize-pocari.png" alt="포카리스웨트에"></figure>
                     <p class="modal-prize-txt fc-indigo"><span class="fs32"><b>포카리스웨트</b>에</span><br>당첨되었습니다.</p>
                 </div>
-                <div class="modal-cont white">
-                    <p class="form-tip fs18 fc-indigo txt-indent"><i class="mark">※</i>경품은 당첨 확인 후 MMS로 발송(10분 내외 소요) 됩니다.</p>
-                    <p class="form-tip mt5 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
-                    <p class="form-tip mt5 fs18 fc-indigo txt-indent"><i class="mark">※</i>개인정보 오기입으로 인한 응모 및 경품 수령 실패는 보상해드리지 않습니다.</p>
-                    <div class="modal-btn-box">
-                        <button class="modal-btn__circ" onclick="closeModal('modalPrize');"><span class="label">등록</span></button>
-                    </div>
+                <div class="modal-cont pt0 white">
+                    <p class="form-tip fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품은 당첨 확인 후 MMS로 발송(10분 내외 소요) 됩니다.</p>
+                    <p class="form-tip mt5 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
+                    <p class="form-tip mt5 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>개인정보 오기입으로 인한 응모 및 경품 수령 실패는 보상해드리지 않습니다.</p>
                 </div>
             </div> <!-- //축하합니다! : 포카리스웨트 당첨 -->
             <div class="modal-wrap__rlt">
@@ -418,8 +553,8 @@
                             <div class="modal-history-prize-box">
                                 <p class="modal-history-prize__coffee fs24">스타벅스 아메리카노<br>HOT(TALL)</p>
                             </div>
-                            <p class="form-tip mt30 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
-                            <p class="form-tip mt10 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
+                            <p class="form-tip mt30 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
+                            <p class="form-tip mt10 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
                         </div>
                         <div class="modal-history-reward-wrap__win">
                             <span class="modal-history-reward-label fs20">스페셜 리워드 당첨 내역</span>
@@ -432,8 +567,8 @@
                             <div class="modal-history-prize-box">
                                 <p class="fs24 txt-cnt">당첨 내역이 없습니다.</p>
                             </div>
-                            <p class="form-tip mt30 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
-                            <p class="form-tip mt10 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
+                            <p class="form-tip mt30 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
+                            <p class="form-tip mt10 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
                         </div>
                         <div class="modal-history-reward-wrap__win">
                             <span class="modal-history-reward-label fs20">스페셜 리워드 당첨 내역</span>
@@ -446,8 +581,8 @@
                             <div class="modal-history-prize-box">
                                 <p class="modal-history-prize__pocari fs24">포카리스웨트<br>250ml</p>
                             </div>
-                            <p class="form-tip mt30 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
-                            <p class="form-tip mt10 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
+                            <p class="form-tip mt30 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
+                            <p class="form-tip mt10 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
                         </div>
                         <div class="modal-history-reward-wrap__win">
                             <span class="modal-history-reward-label fs20">스페셜 리워드 당첨 내역</span>
@@ -460,8 +595,8 @@
                             <div class="modal-history-prize-box">
                                 <p class="modal-history-prize__coffee fs24">스타벅스 아메리카노<br>HOT(TALL)</p>
                             </div>
-                            <p class="form-tip mt30 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
-                            <p class="form-tip mt10 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
+                            <p class="form-tip mt30 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
+                            <p class="form-tip mt10 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
                         </div>
                         <div class="modal-history-center-wrap">
                             <h4 class="fs32 txt-cnt">입고 알람 신청 전시장</h4>
@@ -495,8 +630,8 @@
                             <div class="modal-history-prize-box">
                                 <p class="fs24 txt-cnt">당첨 내역이 없습니다.</p>
                             </div>
-                            <p class="form-tip mt30 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
-                            <p class="form-tip mt10 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
+                            <p class="form-tip mt30 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
+                            <p class="form-tip mt10 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
                         </div>
                         <div class="modal-history-reward-wrap__win">
                             <span class="modal-history-reward-label fs20">스페셜 리워드 당첨 내역</span>
@@ -509,8 +644,8 @@
                             <div class="modal-history-prize-box">
                                 <p class="fs24 txt-cnt">당첨 내역이 없습니다.</p>
                             </div>
-                            <p class="form-tip mt30 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
-                            <p class="form-tip mt10 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
+                            <p class="form-tip mt30 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>경품 응모 시마다 지급되는 스탬프를 1개라도 받았다면 자동으로 스페셜 리워드에 응모됩니다.</p>
+                            <p class="form-tip mt10 fw300 fs18 fc-indigo txt-indent"><i class="mark">※</i>당첨된 경품 안내 MMS를 받지 못하신 경우 이벤트 운영사무국으로 문의 바랍니다.</p>
                         </div>
                         <div class="modal-history-reward-wrap__fail">
                             <span class="modal-history-reward-label fs20">스페셜 리워드 당첨 내역</span>
